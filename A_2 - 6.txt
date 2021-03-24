@@ -1,0 +1,5 @@
+A_2 => lỗi do không có đk thoát hàm đệ quy
+A_3 => lỗi do N không giảm về 1 => ko thoát đc, không thực hiện đc hàm lần 1
+A_4 => lỗi do có quá nhiều vòng lặp cần thực hiện => tràn bộ nhớ
+A_5 => không lỗi nhưng chậm hơn, tốn bộ nhớ hơn vòng lặp 
+A_6 => sau 4625 tầng thì tràn bộ 
