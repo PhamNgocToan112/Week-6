@@ -1,35 +1,27 @@
 #include<iostream>
 
 using namespace std;
-int way1(int arr[], int low, int hight, int key) {
-    int mid;
- 
-    while(low <= hight) {
-        mid = (low + hight) / 2;
- 
-        
-        if (arr[mid] == key) {
-		return mid;
-		} 
-        else if (key > arr[mid])
-            low = mid + 1;
-        else
-            hight = mid - 1;
-    }
-    return -1;
-}
 
+//long long F(int n) {
+//	if (n == 0) return 0;
+//	if (n == 1) return 1;
+//	return F(n - 1) + F(n - 2);
+//}
 
+int main() {
+	int n = 20;
+//	cout <<	F(n) << endl;
+	
+	 long long a , a2 = 1, a1 = 1;
+	for(int i = 3; i <= n; i++){
+		a = a1 + a2; 
+		a1 = a2;
+		a2 = a;
+	}
+	
+	cout << a;	
+	
+	// nhan thay dung vong lap nhanh hon
 
- 
-int main(){
-	int a[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-	
-	int key = 2;
-	int low = 3;
-	int hight = 10;
-	
-	cout << way1(a, low, hight, key); 
-	
 	return 0;
-}
+}	
